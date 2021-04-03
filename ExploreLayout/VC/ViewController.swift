@@ -63,10 +63,10 @@ class ViewController: ASDKViewController<ASCollectionNode> {
             print("Test: ","Insert after \(delay) seconds")
             self?.testLayoutForInsertItems(count: 20)
 
-//            DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
-//                print("Test: ","Delete after \(delay) seconds")
-//                self?.testLayoutForDeleteItems(count: 3)
-//            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
+                print("Test: ","Delete after \(delay) seconds")
+                self?.testLayoutForDeleteItems(count: 3)
+            }
         }
     }
     

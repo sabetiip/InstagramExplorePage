@@ -34,7 +34,7 @@ private struct UICollectionViewWeightLayoutPosition {
     }
 }
 
-public class UICollectionViewWeightLayout: UICollectionViewLayout {
+public class UICollectionViewWeightLayout: UICollectionViewFlowLayout {
     public var itemSpacing: CGFloat = 0
     public var numberOfColumns: Int = 1
     public weak var delegate: UICollectionViewWeightLayoutDelegate?

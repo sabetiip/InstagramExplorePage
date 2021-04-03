@@ -10,10 +10,12 @@ import AsyncDisplayKit
 class TextNode: ASCellNode {
     
     var labelNode = ASTextNode()
+    var text = ""
     
     init(text: String) {
         super.init()
         automaticallyManagesSubnodes = true
+        self.text = text
         
         let paragraph = NSMutableParagraphStyle()
         paragraph.alignment = .center
@@ -29,6 +31,12 @@ class TextNode: ASCellNode {
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
         let spec = ASInsetLayoutSpec(insets: .zero, child: labelNode)
         return spec
+    }
+    
+    override func didEnterPreloadState() {
+        super.didEnterPreloadState()
+        
+        print("didEnterPreloadState: \(text)")
     }
 }
 
