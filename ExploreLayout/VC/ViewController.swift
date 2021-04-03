@@ -17,7 +17,7 @@ class ViewController: ASDKViewController<ASCollectionNode> {
     }()
     
     override init() {
-        let exploreLayout = ExploreLayout()
+        let exploreLayout = UICollectionViewWeightLayout()
         super.init(node: ASCollectionNode(collectionViewLayout: exploreLayout))
         exploreLayout.itemSpacing = 3
         exploreLayout.numberOfColumns = 3
@@ -63,10 +63,10 @@ class ViewController: ASDKViewController<ASCollectionNode> {
             print("Test: ","Insert after \(delay) seconds")
             self?.testLayoutForInsertItems(count: 20)
 
-            DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
-                print("Test: ","Delete after \(delay) seconds")
-                self?.testLayoutForDeleteItems(count: 3)
-            }
+//            DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
+//                print("Test: ","Delete after \(delay) seconds")
+//                self?.testLayoutForDeleteItems(count: 3)
+//            }
         }
     }
     
@@ -104,8 +104,9 @@ extension ViewController: ListAdapterDataSource {
 }
 
 //MARK: - ExploreLayoutDelegate
-extension ViewController: ExploreLayoutDelegate {
-    func collectionView(_ collectionView: UICollectionView, layout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return objects[indexPath.section].size
+extension ViewController: UICollectionViewWeightLayoutDelegate {
+    func collectionView(_ collectionView: UICollectionView, layout weightLayout: UICollectionViewWeightLayout, weightForItemAt indexPath: IndexPath) -> UICollectionViewLayoutWeight {
+        let size = objects[indexPath.section].size
+        return UICollectionViewLayoutWeight(width: Int(size.width), height: Int(size.height))
     }
 }

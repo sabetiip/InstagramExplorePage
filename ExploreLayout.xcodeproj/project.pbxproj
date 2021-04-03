@@ -18,7 +18,7 @@
 		279330F325E54A8000470748 /* ImageNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279330F225E54A8000470748 /* ImageNode.swift */; };
 		27A9E42325E64DCE00F44983 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A9E42225E64DCE00F44983 /* GridLayout.swift */; };
 		27A9E42A25E6929500F44983 /* PostSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A9E42925E6929500F44983 /* PostSectionController.swift */; };
-		27A9E42F25E696FA00F44983 /* ExploreLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A9E42E25E696FA00F44983 /* ExploreLayout.swift */; };
+		27B35480261850A4008B4C31 /* UICollectionViewWeightLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B3547F261850A4008B4C31 /* UICollectionViewWeightLayout.swift */; };
 		478A958A86482D6261257477 /* Pods_ExploreLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CD5AB12D5FCDA57CC541D2 /* Pods_ExploreLayout.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +37,7 @@
 		279330F225E54A8000470748 /* ImageNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNode.swift; sourceTree = "<group>"; };
 		27A9E42225E64DCE00F44983 /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
 		27A9E42925E6929500F44983 /* PostSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSectionController.swift; sourceTree = "<group>"; };
-		27A9E42E25E696FA00F44983 /* ExploreLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreLayout.swift; sourceTree = "<group>"; };
+		27B3547F261850A4008B4C31 /* UICollectionViewWeightLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewWeightLayout.swift; sourceTree = "<group>"; };
 		6219F204799F296A228559CC /* Pods-ExploreLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExploreLayout.debug.xcconfig"; path = "Target Support Files/Pods-ExploreLayout/Pods-ExploreLayout.debug.xcconfig"; sourceTree = "<group>"; };
 		A1D021E47A4FC23E597AA7E0 /* Pods-InstaSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaSearch.debug.xcconfig"; path = "Target Support Files/Pods-InstaSearch/Pods-InstaSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		C0CD5AB12D5FCDA57CC541D2 /* Pods_ExploreLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExploreLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				27A9E42225E64DCE00F44983 /* GridLayout.swift */,
-				27A9E42E25E696FA00F44983 /* ExploreLayout.swift */,
+				27B3547F261850A4008B4C31 /* UICollectionViewWeightLayout.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -283,8 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				27A9E42A25E6929500F44983 /* PostSectionController.swift in Sources */,
+				27B35480261850A4008B4C31 /* UICollectionViewWeightLayout.swift in Sources */,
 				279330E025E5464500470748 /* NSObject+IGListDiffable.swift in Sources */,
-				27A9E42F25E696FA00F44983 /* ExploreLayout.swift in Sources */,
 				279330E625E546C400470748 /* Post.swift in Sources */,
 				279330A825E53F0100470748 /* ViewController.swift in Sources */,
 				279330F325E54A8000470748 /* ImageNode.swift in Sources */,
